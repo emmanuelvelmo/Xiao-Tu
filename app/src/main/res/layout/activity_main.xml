@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titulo_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Xiao Tu"
+        android:textSize="20sp"
+        android:textColor="#2196F3"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="32dp"/>
+
+    <Button
+        android:id="@+id/selec_imgs"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titulo_app"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"
+        android:text="Select images"
+        android:onClick="onGenerateButtonClick"
+        android:backgroundTint="#2196F3"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"/>
+
+    <EditText
+        android:id="@+id/TextBox1"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/selec_imgs"
+        android:layout_marginTop="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Gallery directory"
+        android:textSize="18sp"
+        android:editable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"/>
+
+    <Button
+        android:id="@+id/selec_dir_salida"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextBox1"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"
+        android:text="Output directory"
+        android:onClick="onGenerateButtonClick"
+        android:backgroundTint="#2196F3"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"/>
+
+    <EditText
+        android:id="@+id/TextBox2"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/selec_dir_salida"
+        android:layout_marginTop="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Saving directory"
+        android:textSize="18sp"
+        android:editable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"/>
+
+    <Button
+        android:id="@+id/redim_boton"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextBox2"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"
+        android:text="Resize images"
+        android:onClick="onGenerateButtonClick"
+        android:backgroundTint="#1A1A1A"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"/>
+
+    <ScrollView
+        android:id="@+id/scroll_caja"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_below="@id/redim_boton"
+        android:background="#F0F0F0"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/reg_tex_caja"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#7A7A7A"
+            android:textSize="18sp"
+            android:gravity="start|top"
+            android:scrollbars="vertical"
+            android:editable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"/>
+
+    </ScrollView>
+
+</RelativeLayout>
